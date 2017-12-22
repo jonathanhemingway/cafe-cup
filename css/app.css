@@ -1,0 +1,865 @@
+ 
+/********************************************/
+/* Hey there. This stylesheet is broken up 
+into the following sections.
+
+SECTION 1: GENERAL STYLES
+SECTION 2: CUSTOM CLASSES & IDS
+SECTION 3: BUTTONS
+SECTION 4: MENU AND NAV
+SECTION 5: OFF CANVAS NAV
+SECTION 6: MAIN DIVS AS THEY APPEAR IN THE HTML
+SECTION 7: FOOTER
+SECTION 8: MEDIA QUERIES - THIS SITE WAS BUILT 
+MOBILE FIRST. SO THE MEDIA QUERIES PERTAIN TO 
+MEDIUM AND LARGE SCREENS. */
+/********************************************/
+
+/********************************************/
+/* GENERAL STYLES */
+/********************************************/
+ 
+ /* OVERALL STYLES */
+ * {
+ 	box-sizing: border-box;
+ }
+
+ body{
+ 	border: solid #542d0d;
+ 	border-width: 10px 0 0 0;
+ 	background-color: #542d0d;
+ 	line-height: 0;
+ }
+
+ h1, h2, h3, h4, h5, h6 p{
+ 	font-family: 'Montserrat', sans-serif;
+ }
+
+ h1{
+ 	font-size: 2rem;
+ 	font-weight: 500;
+ 	color: #fff;
+ }
+
+ h2{
+ 	font-size: 1.5rem;
+ 	font-weight: 400;
+ 	color: #fff;
+ }
+
+ h3{
+ 	font-weight: 400;
+ 	color: #fff;
+ }
+
+ .button{
+ 	background-color: #FF5252;
+ 	font-weight: 400; 
+ 	text-transform: uppercase;
+ 	margin: 2rem 0;
+ 	width: 11rem;
+ }
+
+ button{
+ 	background-color: #FF5252;
+ 	font-weight: 400; 
+ 	text-transform: uppercase;
+ 	margin: 1rem 0;
+ }
+
+ .button:hover{
+ 	background-color: #fff;
+ 	border: 2px solid #FF5252;
+ 	color: #FF5252;
+ }
+
+ button:hover{
+ 	background-color: #fff;
+ 	border: 2px solid #FF5252;
+ 	color: #FF5252;
+ }
+
+ /* OVERALL STYLES END */
+
+
+ /* SIGN-IN STYLES BEGIN */
+
+ .sign-in{
+ 	background-color: #fff;
+ }
+
+ .sign-in .row{
+ 	max-width: 100%;
+ }
+
+ .row div h4{
+ 	font-size: .8rem;
+ 	padding: .5rem;
+ 	margin: 0; 
+ }
+
+ .row div h4 a{
+ 	color: #542d0d;
+ }
+
+ .row div h4 span{
+ 	margin: 0 4px;
+ }
+
+ /* SIGN-IN STYLES END */
+
+
+
+
+
+ /* TOP BAR STYLES BEGIN */
+
+ .top-bar{
+ 	height: 7rem;
+ 	background-color: #fff;
+ }
+
+ .top-bar.expanded .title-area{
+ 	background-color: #fff;
+ }
+
+ .top-bar img{
+ 	width: 50%;
+ }
+
+ .top-bar .name{
+ 	padding: .9rem 2rem;
+ }
+
+ /* TOP BAR STYLES END */
+
+ /* TAB BAR STYLES BEGINS */
+
+ 	.right-small{
+ 		height: 3.5rem;
+ 		width: 3.5rem;
+ 		border: none;
+ 	}
+
+ 	.tab-bar .menu-icon{
+ 		height: 3.5rem;
+ 	}
+
+ 	.tab-bar img{
+ 		width: 50%;
+ 		padding: 0 1rem;
+ 	}
+
+ 	.tab-bar{
+ 		height: 3.5rem;
+ 		background: #542d0d;
+ 	}
+
+ 	ul.off-canvas-list li a:hover{
+ 		background-color: #fff;
+ 	}
+
+ 	.right-off-canvas-menu{
+ 		height: 400rem;
+ 		background: #fff;
+ 	}
+
+ 	.tab-bar h4{
+ 		line-height: 0;
+ 		margin-top: 1rem;
+ 		color: #542d0d;
+ 		font-weight: 600;
+ 		text-transform: uppercase;
+ 	}
+
+ 	.tab-bar p{
+ 		color: #542d0d;
+ 	}
+
+ 	.sign-in .row{
+ 		background-color: #542d0d;
+ 	}
+
+ 	.sign-in .row h4, .sign-in .row span {
+ 		color: #fff;
+ 	}
+
+  /* TAB BAR STYLES ENDS */
+
+
+
+
+ /* HEADER STYLES BEGIN */ 
+
+ header{
+ 	background-color: #441926;
+ }
+
+ header h1{
+ 	font-weight: 500;
+ }
+
+ .top-bar .name h1 a{
+ 	color: #542d0d;	
+ }
+
+ /* HEADER STYLES END */ 
+
+
+
+
+ /* HERO STYLES BEGIN */
+
+ .hero{
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-position: center;
+ 	line-height: 0;
+ }
+
+ .overlay{
+ 	padding: 3rem 0;
+ 	background-color: rgba(0,0,0,0.6);
+ }
+
+ .hero h1{
+ 	text-transform: uppercase;
+ 	font-weight: 600;
+ }
+
+ /* HERO STYLES END */
+
+
+
+
+ /* SEASON PROMO STYLES BEGINS */
+
+ 	.holiday-hero{
+ 		background-repeat: no-repeat;
+ 		background-size: cover;
+ 		background-position: center;
+ 	}
+
+	.holiday-overlay{
+		padding: 1rem;
+		background-color: rgba(0,0,0,.6);
+		border: #fff solid; 
+		border-width: 1px 0; 
+	}
+
+	.holiday-hero h2{
+		font-size: 1.25rem;
+	}
+
+	.holiday-hero .button{
+		background-color: #fff;
+		border: 2px solid #FF5252;
+		color: #FF5252;
+		margin: 1rem 0;
+	}
+
+	.holiday-hero .button:hover{
+		background-color: #FF5252;
+		border: none;
+		color: #fff;
+	}
+
+
+ /* SEASON PROMO STYLES ENDS */
+
+
+
+
+ /* SERVICE ONE STYLES BEGIN */
+
+ .subhero{
+ 	padding: 3.5rem 0;
+ 	border: #fff solid;
+ 	border-width: 1px 0px 1px;
+ 	background-image: url(../img/background-img-1.jpg);
+ 	background-position: center;
+ }
+
+ .subhero .row h2{
+ 	font-size: 1.35rem;
+ }
+
+ .menu-description div div{
+ 	border: #fff solid;
+ 	border-width: 0px 1px 1px;
+ 	padding: 0 0 10rem;
+ } 
+
+ .menu-description .row{
+ 	max-width: 100%;
+ } 
+
+ .menu-description div div{
+ 	padding: 1rem 0 9rem 0;
+ } 
+
+.menu-description div div h3{
+ 	font-size: 1.25rem;
+ 	font-weight: 400;
+ 	line-height: 1rem;
+}
+
+.menu-description div div h2{
+ 	font-size: 2rem;
+ 	font-weight: 500;
+}
+
+ .hot-coffee{
+ 	background-image: url(../img/service-hot-coffee.jpg);
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-position: center;
+ }
+
+ .iced-coffee{
+ 	background-image: url(../img/service-iced-coffee.jpg);
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-position: center;
+ }
+
+ .tea{
+ 	background-image: url(../img/service-tea.jpg);
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-position: center;
+ }
+
+ /* SERVICE ONE STYLES END */
+
+
+
+
+ /* SERVICE TWO STYLES BEGIN */
+
+ .service-two .row{
+ 	max-width: 100%;
+ }
+
+ .service-two .row div{
+ 	padding: 0;
+ }
+
+ .orbit-container ul{
+ 	height: 15rem;
+ }
+
+ .orbit-container ul li{
+ 	height: 25rem;
+ }
+
+ .orbit-container ul li .copy{
+ 	padding-top: 3rem; 
+ }
+
+ .headline-1{
+ 	background-image: url(../img/service-pastry1.jpg);
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-position: center;
+ }
+
+ .headline-1 h2{
+ 	font-weight: 600;
+ 	text-transform: uppercase;
+ 	padding: 0 1rem; 
+ }
+
+ .headline-1 h3{
+ 	font-size: 1.20rem;
+ 	font-size: 400;
+ 	text-transform: uppercase;
+ 	padding: 0 1rem;
+ }
+
+ .headline-2{
+ 	background-image: url(../img/service-pastry2.jpg);
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-position: center;
+ }
+
+ .headline-2 h2{
+ 	font-weight: 600;
+ 	text-transform: uppercase;
+ 	padding: 0 1rem; 
+ }
+
+ .headline-2 h3{
+ 	font-size: 1.20rem;
+ 	font-size: 400;
+ 	text-transform: uppercase;
+ 	padding: 0 1rem;
+ }
+
+ .headline-3{
+ 	background-image: url(../img/service-pastry3.jpg);
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-position: center;
+ }
+
+ .headline-3 h2{
+ 	font-weight: 600;
+ 	text-transform: uppercase;
+ 	padding: 0 1rem; 
+ 	font-size: 2.5rem
+ }
+
+ .headline-3 h3{
+ 	font-size: 1.2rem;
+ 	font-size: 400;
+ 	text-transform: uppercase;
+ 	padding: 0 1rem;  
+ }
+
+ /* SERVICE TWO STYLES END */
+
+
+
+
+  /* SERVICE THREE STYLES BEGIN */
+
+ .shop{
+ 	background-color: #fff;
+ }
+
+ .shop .subhero h2{
+ 	font-size: 2rem;
+ }
+
+ .shop .subhero{
+ 	border: none;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-position: center; 
+ 	padding: 0; 
+ }
+
+ .merch{
+ 	padding: 2rem;
+ 	background-image: url(../img/service-3-background.jpg);
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-position: center; 
+ }
+
+ .merch .row{
+ 	padding: 1rem;
+ }
+ 
+ .merch .row .medium-4:hover{
+ 	border-bottom: solid 7px #FF5252;
+ 	transition: .2s; 
+
+ }
+
+ .merch h2{
+ 	color: #542d0d;
+ 	font-weight: 600;
+ }
+
+ /* SERVICE THREE STYLES END */
+
+
+
+/* ABOUT STYLES BEGINS */
+
+.about{
+	background-color: #fff;
+}
+
+.title h1{
+	padding: 1.5rem 0 0 0;
+	color: #542d0d;
+	font-weight: 500;
+}
+
+.about .content .row{
+	padding: 1.5rem 0;
+}
+
+.content .row p{
+	color: #212121;
+}
+
+ /* ABOUT STYLES ENDS */
+
+
+
+
+ /* CONTACT STYLES BEGIN */
+
+ .contact{
+ 	background-color: #fff;
+ }
+
+ .contact .subhero{
+ 	padding: 0; 
+ 	background-image: url(../img/contact-hero.jpg);
+	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-position: center; 
+ }
+
+ .contact .subhero .overlay{
+ 	background-color: rgba(0,0,0,.5);
+ 	padding: 4rem 0;
+ }
+
+ .contact .subhero .row h2{
+ 	font-size: 2rem;
+ 	font-weight: 500;
+ }
+
+ .contact .subhero .row h3{
+ 	font-size: 1.25rem;
+ 	font-weight: 400;
+ }
+
+ .form{
+ 	padding-top: 2rem;
+ }
+
+ label small{
+ 	color: #FF5252;
+ }
+
+ .info h3{
+ 	padding-top: 1rem;
+ 	color: #542d0d;
+ 	font-weight: 600;
+ }
+
+ .info a{
+ 	color: #212121;
+ }
+
+ /* CONTACT STYLES END */
+
+
+
+
+/* FOOTER STYLES BEGIN */
+
+ footer{
+ 	background-color: #2d1808;
+ 	padding: .5rem;
+ }
+
+ footer h4{
+ 	color: #fff;
+ 	font-weight: 200;
+ }
+
+ footer .row{
+ 	padding: 1rem 0;
+ }
+
+ .social{
+ 	padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+ }
+
+ .social li{
+ 	display: inline-block;
+ }
+
+ .facebook a, .twitter a, .instagram a, .pintrest a{
+ 	font-size: 2rem;
+ 	color: #fff;
+ 	margin: 2px; 
+ }
+
+ .f-about p{
+ 	color: #cccccc;
+ }
+
+ .f-about h3 span{
+ 	border-bottom: solid 3px #FF5252;
+ }
+
+ .f-links h3 span{
+ 	border-bottom: solid 2px #FF5252;
+ }
+
+ .f-links a{
+ 	color: #cccccc;
+ 	padding-left: 2.5rem; 
+ }
+
+ .f-links h3 span{
+ 	border-bottom: solid 2px #FF5252;
+ }
+
+ .f-follow h3 span{
+ 	border-bottom: solid 2px #FF5252;
+ }
+
+ .f-contact .row div i{
+ 	font-size: 1.3rem;
+ 	color: #fff;
+ }
+
+ .f-contact h3 span{
+ 	border-bottom: solid 2px #FF5252;
+ }
+
+.f-contact .row{
+	padding: 0;
+}
+
+
+ .f-contact p{
+ 	color: #cccccc;
+ }
+
+ /* FOOTER STYLES END */
+
+
+/********************************************/
+/* MEDIA QUERIES */
+/********************************************/
+/* Medium screens */
+/* min-width 641px, medium screens */
+@media only screen and (min-width: 40.063em) { 
+
+	h1{
+	 	font-size: 3rem;
+ 	}
+
+ 	h2{
+	 	font-size: 2rem;
+ 	}
+
+ 	h3{
+ 		font-size: 1.2rem;
+ 	}
+	
+	/* TOP BAR STYLES BEGINS */
+
+	.top-bar{
+ 		height: 4rem;
+ 	}
+
+	.top-bar-section li:not(.has-form) a:not(.button){
+	 	background-color: #fff;
+	 	padding: 2rem;
+	 	line-height: 0;
+	 	color: #542d0d;
+	 	font-size: 1rem;
+	 	font-weight: 600;
+	 	text-transform: uppercase;
+ 	}
+
+ 	.top-bar-section li:not(.has-form) a:not(.button):hover{
+ 		background-color: #FF5252;
+ 		color: #fff;
+ 		transition: .4s; 
+ 	}
+
+ 	.top-bar .name h1{
+		line-height: 0;
+	 	padding: 2rem;
+ 	}
+
+ 	/* TOP BAR STYLES ENDS */
+
+
+
+
+ 	/* HERO STYLES BEGINS */
+
+	.overlay{
+		padding: 5rem 0;
+		background-color: rgba(0,0,0,.3);
+	}
+
+	/* HERO STYLES ENDS */
+
+
+
+
+	/* SEASON PROMO STYLES BEGINS */
+
+	.holiday-hero h2{
+		font-size: 2rem;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+
+	.holiday-overlay{
+		padding: 1.5rem;
+		background-color: rgba(0,0,0,.65);
+	}
+
+	/* SEASON PROMO STYLES ENDS */
+
+
+
+
+	/* SERVICE ONE STYLES BEGINS */
+
+	.subhero{
+		padding: 5rem 0;
+	}
+
+	.subhero .row h2{
+ 		font-size: 2.5rem;
+ 		font-weight: 500;
+ 		text-transform: uppercase;
+ 	}
+
+	.menu-description div div{
+	 	padding: 1.75rem 0 15rem;
+ 	} 
+ 	/* SERVICE ONE STYLES ENDS */
+
+
+
+
+ 	/* SERVICE TWO STYLES BEGINS */
+
+ 	.orbit-container ul li{
+ 		height: 30rem;
+ 	}
+
+ 	.orbit-container ul li .copy{
+ 		padding: 10rem 0; 
+ 	}
+
+ 	.orbit-container ul li  div h2, .orbit-container ul li div h3{
+ 		padding-left: 7rem; 
+ 	}
+
+ 	/* SERVICE TWO STYLES ENDS */
+
+
+
+	/* SERVICE THREE STYLES BEGIN */
+
+	 .headline-1 h2{
+	 	font-weight: 600;
+	 	text-transform: uppercase;
+	 	padding: 0 1rem;
+	 	font-size: 2.5rem; 
+	 }
+
+	 .headline-1 h3{
+	 	font-size: 1.4rem;
+	 	font-size: 400;
+	 	text-transform: uppercase;
+	 	padding: 0 1rem;
+	 }
+
+	 .headline-2 h2{
+	 	font-weight: 600;
+	 	text-transform: uppercase;
+	 	padding: 0 1rem; 
+	 	font-size: 2.5rem;
+	 }
+
+	 .headline-2 h3{
+	 	font-size: 1.25rem;
+	 	font-size: 400;
+	 	text-transform: uppercase;
+	 	padding: 0 1rem;
+	 }
+
+	 .headline-3 h2{
+	 	font-weight: 600;
+	 	text-transform: uppercase;
+	 	padding: 0 1rem; 
+	 	font-size: 3rem;
+	 }
+
+	 .headline-3 h3{
+	 	font-size: 1.5rem;
+	 	font-size: 400;
+	 	text-transform: uppercase;
+	 	padding: 0 1rem;  
+	 }
+
+	/* SERVICE THREE STYLES END */
+
+
+
+ 	/* ABOUT STYLES BEGINS */
+
+		.about{
+			background-color: #fff;
+		}
+
+		.title h1{
+			padding: 1.5rem 0 0 0;
+			color: #542d0d;
+			font-weight: 600;
+		}
+
+		.about .content .row{
+			padding: 2rem 0;
+		}
+
+		.content .row p{
+			color: #212121;
+		}
+
+	/* ABOUT STYLES ENDS */
+
+
+
+	/* CONTACT STYLES BEGIN */
+		.contact .subhero{
+	 		padding: 0; 
+	 	}
+
+		 .contact .subhero .overlay{
+		 	padding-bottom: 13rem;
+		 }
+
+		 .contact .subhero .row h2{
+		 	font-size: 3rem;
+		 }
+
+		 .contact .subhero .row h3{
+		 	font-size: 1.25rem;
+		 }
+
+		 .form{
+		 	padding: 2rem 0;
+		 }
+
+		 label small{
+		 	color: #FF5252;
+		 }
+
+		 .info h3{
+		 	padding-top: 1rem;
+		 	color: #542d0d;
+		 	font-weight: 600;
+		 }
+
+		 .info a{
+		 	color: #212121;
+		 }
+
+	/* CONTACT STYLES END */
+
+
+	/* FOOTER STYLES END */
+		.f-contact h3, .f-follow h3, .f-about h3, .f-links h3{
+			margin-bottom: 1.5rem;
+		} 
+
+/* min-width 1025px, large screens */
+/* Large screens */
+@media only screen and (min-width: 64.063em) {
+
+} 
+
